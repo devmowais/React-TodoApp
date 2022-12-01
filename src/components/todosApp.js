@@ -7,11 +7,12 @@ const TodosApp = (props) => {
             <hr/><h3> Todos List </h3> <hr/>
             {
                 props.todos.length === 0 ?
-                    "No todos avaible" :
+                    "No todos available" :
                     props.todos.map((todo) => {
 
                         return (
                             <>
+                            
                             < TodoItems todo = { todo } key = { todo.sno } onDelete = { props.onDelete } /> <hr />
                             </>
                         )

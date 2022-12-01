@@ -3,10 +3,19 @@ import Header from './components/header';
 import TodosApp from './components/todosApp';
 import Footer from './components/footer';
 import React, { useState, useEffect } from 'react';
-import { AddTodo } from './components/todoItems';
+import { AddTodo} from './components/todoItems';
+
 
 
 function App() {
+
+  const getMonthName = ['Jan,', 'Feb,', 'Mar,', 'Apr,', 'May,', 'Jun,', 'Jul,', 'Aug,', 'Sep,', 'Oct,', 'Nov,', 'Dec'][new Date().getMonth()];
+
+  let time = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()} | ${new Date().getDate()}/${getMonthName}/${new Date().getFullYear()}`;
+  
+  const times = time.toString();
+  // console.log(times)
+
   
   let initTodo;
   if (localStorage.getItem("todos") === null) {
@@ -18,20 +27,18 @@ function App() {
 
 
   const onDelete = (todo) => {
-    console.log("I am ondelete of todo", todo);
-    // Deleting this way in react does not work
-    // let index = todos.indexOf(todo);
-    // todos.splice(index, 1);
+    // console.log("I am ondelete of todo", todo);
 
     setTodos(todos.filter((e) => {
       return e !== todo;
     }));
-    console.log("deleted", todos)
+    // console.log("deleted", todos)
     localStorage.setItem("todos", JSON.stringify(todos));
   }
 
-  const addTodo = (title, desc) => {
-    console.log("I am adding this todo", title, desc)
+  const addTodo = (title, desc, time) => {
+    time = times;
+    // console.log("I am adding this todo",  title, desc, time)
     let sno;
     if (todos.length === 0) {
       sno = 1;
@@ -43,6 +50,7 @@ function App() {
       sno: sno,
       title: title,
       desc: desc,
+      time: times,
     }
     setTodos([...todos, myTodo]);
     console.log(myTodo);
