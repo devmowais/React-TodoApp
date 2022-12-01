@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <>
             <header>
-                <figure className="brand">TodoApp</figure>
+                <figure className="appName">TodoApp</figure>
                 <nav className="menu">
                     <input type="checkbox" id="menuToggle" />
                     <label htmlFor="menuToggle" className="menu-icon"><i className="fa fa-bars"></i></label>

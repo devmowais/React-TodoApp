@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
+    <>
     <footer className="bg">
     <div id="footer">
       <a href="https:/www.twitter.com" className="twitter"></a>
@@ -12,5 +13,6 @@ export default function Footer() {
       <p className="tg">Copyright &copy; 2022</p>
     </div>
 </footer>
+    </>
   )
 }
