@@ -48,7 +48,7 @@ body {
 }
 
 a {
-  text-decoration: none!important;
+  text-decoration: none !important;
 }
 
 li {
@@ -256,7 +256,8 @@ footer {
 }
 
 /* Todo Task */
-.todoTasks {
+.todoTasks,
+.todoTitle {
   word-wrap: break-word;
 }
 
@@ -319,6 +320,15 @@ footer {
 
 }
 
+.date {
+  color: rgba(94, 91, 91, 0.568);
+  font-size: smaller;
+}
+
+/* .todoTitle{
+  max-le
+} */
+
 
 /* AddTodo */
 
@@ -327,13 +337,13 @@ footer {
 }
 
 
-.title{
-  text-align: left!important ;
+.title {
+  text-align: left !important;
   align-items: left;
 }
 
 
-.form-control {
+/* .form-control {
   display: inline-block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -347,4 +357,4 @@ footer {
   appearance: none;
   border-radius: 0.375rem;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
+} */
