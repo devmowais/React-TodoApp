@@ -4,9 +4,6 @@ import Form from 'react-bootstrap/Form';
 
 
 
-
-const getMonthName = ['Jan,', 'Feb,', 'Mar,', 'Apr,', 'May,', 'Jun,', 'Jul,', 'Aug,', 'Sep,', 'Oct,', 'Nov,', 'Dec'][new Date().getMonth()];
-
 export const AddTodo = ({ addTodo }) => {
   
   const [title, setTitle] = useState("");
@@ -31,12 +28,12 @@ export const AddTodo = ({ addTodo }) => {
         <Form onSubmit={submit}>
           <Form.Group className="mb-3">
             <Form.Label className='title'>Title</Form.Label>
-            <Form.Control className='w-100 form-control' maxlength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
+            <Form.Control className='w-100 form-control ' maxLength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
           </Form.Group>
 
           <Form.Group className="mb-3">
             <Form.Label>Description</Form.Label>
-            <Form.Control className='w-100 form-control' maxlength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
+            <Form.Control className='w-100 form-control ' maxLength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
           </Form.Group>
           <button className="btn-add" type="submit">
             Add Todo

@@ -3,7 +3,19 @@ import Header from './components/header';
 import TodosApp from './components/todosApp';
 import Footer from './components/footer';
 import React, { useState, useEffect } from 'react';
-import { AddTodo} from './components/todoItems';
+import { AddTodo } from './components/todoItems';
+import { About } from './components/About';
+import { Calender } from './components/Calender';
+import { Calculation } from './components/Calculation';
+import { Contact } from './components/Contact';
+
+import {
+  BrowserRouter,
+  Routes, // instead of "Switch"
+  Route,
+} from "react-router-dom";
+
+
 
 
 
@@ -61,12 +73,30 @@ function App() {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
+
   return (
     <>
+      <BrowserRouter>
       <Header />
-      <AddTodo addTodo={addTodo} />
-      <TodosApp todos={todos} onDelete={onDelete} />
-      <Footer />
+      <Routes>
+          <Route exact path="/" element={
+              <>
+              <AddTodo addTodo={addTodo} />
+              <TodosApp todos={todos} onDelete={onDelete} />
+              </>
+            
+          }/>
+          <Route exact path="/about" element={<About />}/>
+          <Route exact path="/calender" element={<Calender />}/>
+          <Route exact path="/calculation" element={<Calculation />}/>
+          <Route exact path="/contact" element={<Contact />}/>
+         
+        </Routes>
+
+      
+      
+        <Footer />
+        </BrowserRouter>
     </>
 
   );
