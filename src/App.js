@@ -5,7 +5,7 @@ import Footer from './components/footer';
 import React, { useState, useEffect } from 'react';
 import { AddTodo } from './components/todoItems';
 import { About } from './components/About';
-import { Calender } from './components/Calender';
+import { Calendar } from './components/Calendar';
 import { Calculation } from './components/Calculation';
 import { Contact } from './components/Contact';
 
@@ -87,7 +87,7 @@ function App() {
             
           }/>
           <Route exact path="/about" element={<About />}/>
-          <Route exact path="/calender" element={<Calender />}/>
+          <Route exact path="/calender" element={<Calendar />}/>
           <Route exact path="/calculation" element={<Calculation />}/>
           <Route exact path="/contact" element={<Contact />}/>
          

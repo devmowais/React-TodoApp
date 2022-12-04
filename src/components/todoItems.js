@@ -5,7 +5,7 @@ import Form from 'react-bootstrap/Form';
 
 
 export const AddTodo = ({ addTodo }) => {
-  
+
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
 
@@ -23,21 +23,27 @@ export const AddTodo = ({ addTodo }) => {
   return (
     <>
       <div className='addContainer'>
-        <h3>Add a Todo</h3>
+        <h3 className='text-center mt-3'>Add a Todo</h3>
 
         <Form onSubmit={submit}>
           <Form.Group className="mb-3">
-            <Form.Label className='title'>Title</Form.Label>
-            <Form.Control className='w-100 form-control ' maxLength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
+            <div className='form-label'><Form.Label className='title'>Title:</Form.Label></div>
+            <div className='f-c'>
+              <Form.Control className='w-75 mx-auto' maxLength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
+            </div>
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <Form.Label>Description</Form.Label>
-            <Form.Control className='w-100 form-control ' maxLength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
-          </Form.Group>
-          <button className="btn-add" type="submit">
-            Add Todo
-          </button>
+            <div className='form-label'><Form.Label className='description '>Description:</Form.Label> </div>
+            <div className='f-c'>
+              <Form.Control className='w-75 mx-auto' maxLength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
+            </div>
+          </Form.Group>>
+          <div className='text-center'>
+            <button className="btn-add " type="submit">
+              Add Todo
+            </button>
+          </div>
         </Form>
       </div >
     </>

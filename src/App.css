@@ -332,10 +332,10 @@ header {
 
 
 /* AddTodo */
-
+/* 
 .addContainer {
   text-align: center;
-}
+} */
 
 
 .title {
@@ -368,7 +368,7 @@ header {
 }
 
 /* +++++++++++++++++++| Calender |+++++++++++++++++++ */
-.calender {
+.calendar {
   text-align: center;
   height: 72.5vh;
 
@@ -386,4 +386,11 @@ header {
   text-align: center;
   height: 72.5vh;
 
+}
+
+.form-label {
+
+  margin-left: 13.7vh;
+  margin-bottom: 0px;
+  font-weight: bold;
 }
