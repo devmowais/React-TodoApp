@@ -5,7 +5,7 @@ import Footer from './components/footer';
 import React, { useState, useEffect } from 'react';
 import { AddTodo } from './components/todoItems';
 import { About } from './components/About';
-import { Calendar } from './components/Calendar';
+import  Calendar from './components/Cal/Calendar';
 import { Calculation } from './components/Calculation';
 import { Contact } from './components/Contact';
 
