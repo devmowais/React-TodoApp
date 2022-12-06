@@ -61,8 +61,8 @@ header {
   line-height: 3.125em;
   text-align: center;
   font-family: sans-serif;
-  background-color: #f508d5;
-  background-image: linear-gradient(225deg, #2B86C5 0%, #784BA0 40%, #FF3CAC 100%);
+  background-color: #19f0c1;
+  background-image: linear-gradient(324deg, #00fc8c 0%, #00d4ff 40%, #9cff32 100%);
 }
 
 .appName {
@@ -173,14 +173,14 @@ header {
   bottom: 0;
   width: 100%;
   height: 17%;
-  margin-top: 0.625em;
+  /* margin-top: 0.25em; */
   margin-bottom: 0;
   /* display: block; */
 }
 
 .bg {
-  background-color: #FF3CAC;
-  background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  background-color: #389640;
+  background-image: linear-gradient(162deg, #00fc8c 0%, #00d4ff 40%, #9cff32 100%);
   display: block;
 
 }
@@ -326,9 +326,9 @@ header {
   font-size: smaller;
 }
 
-/* .todoTitle{
-  max-le
-} */
+.todoTitle{
+  color:#0c72f7;
+}
 
 
 /* AddTodo */

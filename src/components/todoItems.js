@@ -29,16 +29,16 @@ export const AddTodo = ({ addTodo }) => {
           <Form.Group className="mb-3">
             <div className='form-label'><Form.Label className='title'>Title:</Form.Label></div>
             <div className='f-c'>
-              <Form.Control className='w-75 mx-auto' maxLength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
+              <Form.Control className='w-75 mx-auto form-control-lg' maxLength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
             </div>
           </Form.Group>
 
           <Form.Group className="mb-3">
             <div className='form-label'><Form.Label className='description '>Description:</Form.Label> </div>
             <div className='f-c'>
-              <Form.Control className='w-75 mx-auto' maxLength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
+              <Form.Control className='w-75 mx-auto form-control-lg' maxLength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
             </div>
-          </Form.Group>>
+          </Form.Group>
           <div className='text-center'>
             <button className="btn-add " type="submit">
               Add Todo
@@ -56,7 +56,7 @@ export const TodoItems = ({ todo, onDelete }) => {
   return (
     <div>
       <p className='date'>{todo.time} </p>
-      <h4 className='todoTitle'>{todo.title}</h4>
+      <h4 className='todoTitle'><u>{todo.title}</u></h4>
       <p className='todoTasks'>{todo.desc}</p>
       <button className='btn-del' onClick={() => { (onDelete(todo)) }}>Delete</button>
     </div>
