@@ -7,7 +7,7 @@ import { AddTodo } from './components/todoItems';
 import { About } from './components/About';
 import  Calendar from './components/Cal/Calendar';
 import Calculation from './components/calc/Calculation';
-import { Contact } from './components/Contact';
+import { Contact } from './components/cont/Contact';
 
 import {
   BrowserRouter,

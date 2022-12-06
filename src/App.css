@@ -363,23 +363,16 @@ header {
 /* +++++++++++++++++++| About |+++++++++++++++++++ */
 .about {
   text-align: center;
-  height: 72.5vh;
-
-}
-
-/* +++++++++++++++++++| Calculation |+++++++++++++++++++ */
-.calculation {
-  text-align: center;
-  height: 72.5vh;
+  height: 74vh;
 
 }
 
 /* +++++++++++++++++++| Contact |+++++++++++++++++++ */
-.contact {
+/* .contact {
   text-align: center;
-  height: 72.5vh;
+  height: 74vh;
 
-}
+} */
 
 .form-label {
 
