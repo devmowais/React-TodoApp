@@ -18,7 +18,6 @@ export const Contact = () => {
     event.preventDefault();
     console.log(formState);
 
-
     const config = {
       // Host: "smtp.elasticemail.com",
       SecureToken: "87a08235-837c-47a3-bd6f-6312a5743b33",

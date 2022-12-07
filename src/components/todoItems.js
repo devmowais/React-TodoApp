@@ -27,15 +27,15 @@ export const AddTodo = ({ addTodo }) => {
 
         <Form onSubmit={submit}>
           <Form.Group className="mb-3">
-            <div className='form-label'><Form.Label className='title'>Title:</Form.Label></div>
             <div className='f-c'>
+            <div className='form-label w-75  mx-auto'><Form.Label className='title'>Title:</Form.Label></div>
               <Form.Control className='w-75 mx-auto form-control-lg' maxLength="50" type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter title within 50 characters" />
             </div>
           </Form.Group>
 
           <Form.Group className="mb-3">
-            <div className='form-label'><Form.Label className='description '>Description:</Form.Label> </div>
             <div className='f-c'>
+            <div className='form-label w-75  mx-auto'><Form.Label className='description '>Description:</Form.Label> </div>
               <Form.Control className='w-75 mx-auto form-control-lg' maxLength="150" type="text" value={desc} onChange={(e) => setDesc(e.target.value)} placeholder="Enter description within 150 characters" />
             </div>
           </Form.Group>

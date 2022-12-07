@@ -3,15 +3,17 @@ html,body{
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
+    
 }
 
 .con-container{
     width: 100%;
     height: 100%;
-    background-color: aqua;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: aqua;
+    background-image: linear-gradient(333deg, #00fc8c 10%, #00d4ff 50%, #00fc8c 90%);
 
 }
 
