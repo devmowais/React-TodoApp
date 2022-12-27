@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 export default function Header() {
 
     return (
@@ -13,7 +14,7 @@ export default function Header() {
                     <ul>
                         <Link to="/"><li>Todos</li></Link>
                         <Link to="/about"><li>About</li></Link>
-                        <Link to="/calender"><li>Calender</li></Link>
+                        <Link to="/calender"><li>Calendar</li></Link>
                         <Link to="/calculation"><li>Calculation</li></Link>
                         <Link to="/contact"><li>Contact</li></Link>
                     </ul>
