@@ -63,7 +63,7 @@ header {
   font-family: sans-serif;
   background-color: #15a6ca;
   /* background-image: linear-gradient(324deg,  #1cf098 0%, #36f0a2 40%, #5fe6c4 100%); */
-  background-image: linear-gradient(324deg,  #aa64e2 0%, #c95fd3 40%, #c860f1 100%);
+  background-image: linear-gradient(324deg,   #28e4f1 0%, #9ce4fa 30%, #bceefd 55%, #42eff5 100%);
 }
 
 .appName {
@@ -71,6 +71,7 @@ header {
   height: 100%;
   float: left;
   margin: 0 0 0 5%;
+  font-weight: bold;
 }
 
 .menu {
@@ -181,7 +182,7 @@ header {
 
 .bg {
   background-color: #15a6ca;
-  background-image: linear-gradient(162deg,  #aa64e2 0%, #c95fd3 40%, #c860f1 100%);
+  background-image: linear-gradient(162deg,  #0db8ec 0%, #81dbf7 40%, #81dbf7 60%, #0db8ec 100%);
   /* display: block; */
 
 }
