@@ -2,8 +2,7 @@
   "name": "todos-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://devmowais.github.io/React-TodoApp/",
-  "dependencies": {
+    "dependencies": {
     "@fullcalendar/daygrid": "^5.11.3",
     "@fullcalendar/interaction": "^5.11.3",
     "@fullcalendar/react": "^5.11.3",
@@ -22,8 +21,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
